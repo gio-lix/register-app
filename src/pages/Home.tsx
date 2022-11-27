@@ -8,8 +8,7 @@ interface Props {
     setIsAuth: (auth: LoginFormType) => void
 }
 
-const Home:FC<Props> = ({isAuth, setIsAuth}) => {
-    console.log('IMAGES.environment -', IMAGES.philodendron)
+const Home: FC<Props> = ({isAuth, setIsAuth}) => {
     return (
         <div id="Home" className={`${isAuth.open ? "active" : ""}`}>
             <div className="container">
@@ -19,7 +18,7 @@ const Home:FC<Props> = ({isAuth, setIsAuth}) => {
                 <div className="text-btns">
                     <div className="btns">
                         <a href="#" className="login-btn"
-                            onClick={() => setIsAuth({open: true, form: "login"})}
+                           onClick={() => setIsAuth({open: true, form: "login"})}
                         >Login</a>
                         <a
                             onClick={() => setIsAuth({open: true, form: "register"})}

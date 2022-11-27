@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import {LoginFormType} from "./types";
@@ -8,8 +8,12 @@ function App() {
         open: false,
         form: "login"
     })
+
+
+
+
     return (
-        <>
+        < >
             <Home
                 isAuth={isAuth}
                 setIsAuth={setIsAuth}
